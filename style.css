@@ -6,7 +6,7 @@
     width:1024px;
     height:768px;
     background-color: rgba(255,0,0,0.3);
-    position: relative;
+    position: absolute;
     margin: 0 auto;
 }
 .grid {
@@ -27,6 +27,7 @@
     width: 14.2%;
     height: 100%;
     float: left;
+    position: relative;
 }
 .grid-formatting {
     background: #ffa500;
@@ -41,128 +42,157 @@
 .db-top3,
 .db-top4,
 .db-top5 {
-    width: 90%;
-    border: 1px solid #000;
-    height: 100%;
+    width: 70%;
+    border: 4px solid rgba(255,0,0,.2);
+    height: 30%;
     border-radius: 50%;
-    margin-top: 10%;
-    margin-left: 2%;
-    background-color: rgba(220,70,70,0.8);
+    left: 15%;
+    top: 10%;
     z-index: 7;
     position: relative;
+}
+.db-top1:before,
+.db-top2:before,
+.db-top3:before,
+.db-top4:before,
+.db-top5:before {
+    content: " ";
+    position: absolute;
+    z-index: 6;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #333;
+    border-radius: 50%;
 }
 .db-top2,
 .db-top3,
 .db-top4,
 .db-top5 {
-    margin-top: -70px;
+
     background-color: rgba(220,70,70,0.1);
 }
+
+.db-top2 {
+    top: -26%;
+}
+.db-top3 {
+    top: -61%;
+}
+.db-top4 {
+    top: -96%;
+}
+.db-top5 {
+    top: -131%;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.5);
+}
+
+
+
+
+.db-top1 {
+}
+.db-top4 {
+}
 .db-top6 {
-    margin-top: -76%;
+    top: -51%;
     width: 90%;
     height: 100%;
+    position: absolute;
+    z-index: 7;
     background-color: rgba(156,31,31,0.5);
-    -webkit-clip-path: polygon(9% 69%,17% 58%, 20% 55%, 25% 51%,37% 45%, 48% 43%,57% 43%,
-    59% 43%, 65% 44%, 72% 46%,78% 49%,84% 53%,90% 58%, 98% 69%, 93% 77%, 90% 80%, 86% 84%,
-    86% 84%, 80% 88%, 78% 89%,70% 93%, 65% 95%, 61% 96%, 56% 97%, 47% 96%, 39% 95%, 31% 92%,
-    25% 88%, 20% 84%, 15% 79%, 12% 75%);
-    clip-path: polygon(9% 69%,17% 58%, 20% 55%, 25% 51%,37% 45%, 48% 43%,57% 43%,
-    59% 43%, 65% 44%, 72% 46%,78% 49%,84% 53%,90% 58%, 98% 69%, 93% 77%, 90% 80%, 86% 84%,
-    86% 84%, 80% 88%, 78% 89%,70% 93%, 65% 95%, 61% 96%, 56% 97%, 47% 96%, 39% 95%, 31% 92%,
-    25% 88%, 20% 84%, 15% 79%, 12% 75%);
 }
 .funnel1 {
     width: 70%;
-    border: 1px solid #000;
-    height: 60%;
+    border: 1px solid #333;
+    height: 26%;
     border-radius: 50%;
-    margin-top: 27%;
-    margin-left: 15%;
-    margin-right: 15%;
+    top: 76%;
+    left: 17%;
     background-color: #e4a615;
     z-index: 4;
-    position: relative;
+    position: absolute;
+    box-shadow: 0 7px 21px #660 inset;
 }
 
 .funnel2 {
-    margin-top: -14%;
-    margin-left: 15%;
-    margin-right: 15%;
+    top: 81%;
+    left: 15%;
+    right: 15%;
     width: 71%;
-    height: 60%;
+    height: 56%;
     background-color: rgba(220, 70, 70, 0.5);
     z-index: 7;
-    position: relative;
-    -webkit-clip-path: polygon(0% 0%, 2% 6%, 9% 22%, 12% 27%, 20% 34%,30% 40%,50% 44%,
-    70% 41%, 80% 34%, 85% 31%, 90% 24%, 95% 14%, 100% 4%, 73% 100%, 29% 100%);
-    clip-path: polygon(0% 0%, 2% 6%, 9% 22%, 12% 27%, 20% 34%,30% 40%,50% 44%,
-    70% 41%, 80% 34%, 85% 31%, 90% 24%, 95% 14%, 100% 4%, 73% 100%, 29% 100%)
+    position: absolute;
+    -webkit-clip-path: polygon(4% 22%, 4% 21%, 8% 25%, 11% 30%, 20% 34%, 36% 40%,
+    47% 42%, 67% 41%, 81% 37%, 90% 34%, 97% 29%, 109% 15%, 110% 0%, 73% 100%, 28% 100%);
+    clip-path: polygon(4% 22%, 4% 21%, 8% 25%, 11% 30%, 20% 34%, 36% 40%,
+    47% 42%, 67% 41%, 81% 37%, 90% 34%, 97% 29%, 109% 15%, 110% 0%, 73% 100%, 28% 100%);
 }
 .tube1, .tube6 {
     background-color: rgba(220, 70, 70, 0.5);
-    margin-top: 0;
-    margin-left: 35%;
-    /* margin-right: 34%; */
+    top: 136.9%;
+    left: 35%;
     width: 32%;
-    height: 100%;
+    height: 99.2%;
     z-index: 7;
-    position: relative;
+    position: absolute;
 }
 .tube6 {
     height: 294%;
 }
 .tube2 {
     background-color: rgba(220, 70, 70, 0.5);
-    margin-top: 0;
-    margin-left: 67%;
-    margin-right: 34%;
+    top: 236%;
+    left: 46%;
+    right: 34%;
     width: 32%;
-    height: 121%;
+    height: 42%;
     transform: skew(45deg);
     border-top: 0;
     border-bottom: 0;
     z-index: 7;
-    position: relative;
+    position: absolute;
 }
 .tube3 {
     background-color: rgba(220,70,70,0.5);
-    margin-top: 0%;
-    margin-left: 113%;
-    width: 236%;
+    top:278%;
+    left: 71%;
+    width: 278%;
     height: 53%;
     transform: skew(45deg);
     z-index: 7;
-    position: relative;
+    position: absolute;
 }
 
 .tube4, .tube8 {
     background-color: rgba(220, 70, 70, 0.5);
-    margin-top: 0;
-    margin-left: 3%;
+    top: 236%;
+    left: 24%;
     width: 32%;
-    height: 121%;
+    height: 42%;
     transform: skew(-45deg);
     z-index: 7;
-    position: relative;
+    position: absolute;
 }
 .tube8 {
-    margin-left: 3%;
-    height:121%;
+    left: 24%;
+    height: 42%;
 }
 .tube5 {
     background-color: rgba(220,70,70,0.5);
-    margin-top: 0%;
-    margin-left: -247%;
-    width: 236%;
+    top: 278%;
+    left: -247%;
+    width: 278%;
     height: 53%;
     transform: skew(-45deg);
     z-index: 7;
-    position: relative;
+    position: absolute;
 }
 .packet1, .packet2, .packet3, .packet4, .packet5, .packet6, .packet7 {
-    width: 3%;
-    height: 2%;
+    width: 15%;
+    height: 12%;
     background-color: #228b22;
     position: absolute;
     border-radius:4px;
@@ -170,160 +200,196 @@
     animation-name: drop1;
     animation-duration: 8s;
     animation-iteration-count: infinite;
-    left: 6%;
-    top: 6%;
+    left: 48%;
+    top: 0;
 }
 .packet2 {
     animation-name: drop2;
-    left: 20%;
-    top: 6%;
+    left: 48%;
     background-color: deepskyblue;
 }
 .packet3 {
     animation-name: drop3;
-    left: 34%;
-    top: 6%;
+    left: 48%;
     background-color: beige;
 }
 .packet4 {
     animation-name: drop4;
     left: 48%;
-    top: 6%;
     background-color: deepskyblue;
 }
 .packet5 {
     animation-name: drop5;
-    left: 63%;
-    top: 6%;
+    left: 48%;
     background-color: red;
 }
 .packet6 {
     animation-name: drop6;
-    left: 76.5%;
-    top: 6%;
+    left: 48%;
     background-color: deepskyblue;
 }
 .packet7 {
     animation-name: drop7;
     left: 91%;
-    top: 6%;
     background-color: red;
 }
 @keyframes drop1 {
     0% {
-        left: 6%;
-        top: 6%;
+        left: 45%;
+        top: 4%;
     }
     20% {
-        left: 6%;
-        top: 36%;
+        left: 45%;
+        top: 230%;
     }
     30% {
-        left: 17%;
-        top: 51%;
+        left: 88%;
+        top: 305%;
     }
     50% {
-        left: 48%;
-        top: 51%;
+        left: 344%;
+        top: 305%;
     }
     100% {
-        left: 48%;
-        top: 100%;
+        left: 344%;
+        top: 450%;
     }
 }
 @keyframes drop2 {
     0% {
-        left: 20%;
-        top: 6%;
+        left: 45%;
+        top: 4%;
     }
     18% {
-        left: 20%;
-        top: 36%;
+        left: 45%;
+        top: 230%;
     }
     28% {
-        left: 32%;
-        top: 51%;
+        left: 88%;
+        top: 305%;
     }
     40% {
-        left: 48%;
-        top: 51%;
+        left: 244%;
+        top: 305%;
     }
     90% {
-        left: 48%;
-        top: 90%;
+        left: 244%;
+        top: 400%;
     }
     100% {
-        left: 48%;
-        top: 100%;
-    }}
+        left: 244%;
+        top: 450%;
+    }
+}
 @keyframes drop3 {
     0% {
-        left: 34%;
-        top: 6%;
+        left: 45%;
+        top: 4%;
     }
     18% {
-        left: 34%;
-        top: 35%;
+        left: 45%;
+        top: 230%;
     }
     28% {
-        left: 45%;
-        top: 51%;
+        left: 84%;
+        top: 305%;
     }
     40% {
-        left: 48%;
-        top: 51%;
+        left: 145%;
+        top: 305%;
     }
     90% {
-        left: 48%;
-        top: 90%;
+        left: 145%;
+        top: 400%;
     }
     100% {
-        left: 48%;
-        top: 100%;
+        left: 145%;
+        top: 450%;
     }
 }
 @keyframes drop4 {
-    0%   { left: 48%; top: 6%;   }
-    18%  { left: 48%; top: 50%;  }
-    28%  { left: 48%; top: 65%;  }
-    40%  { left: 48%; top: 65%;  }
-    90%  { left: 48%; top: 90%;  }
-    100% { left: 48%; top: 100%; }
+    0%   { left: 45%; top: 4%;   }
+    18%  { left: 45%; top: 220%;  }
+    28%  { left: 45%; top: 305%;  }
+    40%  { left: 45%; top: 305%;  }
+    90%  { left: 45%; top: 400%;  }
+    100% { left: 45%; top: 450%; }
 }
 @keyframes drop5 {
     0% {
-        left: 62.5%;
-        top: 6%;
+        left: 45%;
+        top: 4%;
     }
-    20% {
-        left: 62.5%;
-        top: 36%;
+    18% {
+        left: 45%;
+        top: 230%;
     }
     30% {
-        left: 51.5%;
-        top: 51%;
+        left: 10%;
+        top: 305%;
+    }
+    40% {
+        left: -56%;
+        top: 305%;
     }
     50% {
-        left: 48%;
-        top: 51%;
+        left: -56%;
+        top: 450%;
     }
+
     100% {
-        left: 48%;
-        top: 100%;
+        left: -56%;
+        top: 450%;
     }
 }
 @keyframes drop6 {
-    0%   { left: 76.5%; top: 6%;   }
-    18%  { left: 76.5%; top: 36%;  }
-    28%  { left: 66%; top: 51%;  }
-    40%  { left: 48%; top: 51%;  }
-    90%  { left: 48%; top: 90%;  }
-    100% { left: 48%; top: 100%; }
+    0% {
+        left: 45%;
+        top: 4%;
+    }
+    18% {
+        left: 45%;
+        top: 230%;
+    }
+    30% {
+        left: 10%;
+        top: 305%;
+    }
+    40% {
+        left: -156%;
+        top: 305%;
+    }
+    50% {
+        left: -156%;
+        top: 450%;
+    }
+    100% {
+        left: -156%;
+        top: 450%;
+    }
 }
 @keyframes drop7 {
-    0%   { left: 91%; top: 6%;   }
-    20%  { left: 91%; top: 36%;  }
-    30%  { left: 79.5%; top: 51%;  }
-    50%  { left: 48%; top: 51%;  }
-    100% { left: 48%; top: 100%; }
-}
+    0% {
+        left: 45%;
+        top: 4%;
+    }
+    18% {
+        left: 45%;
+        top: 230%;
+    }
+    30% {
+        left: 8%;
+        top: 305%;
+    }
+    40% {
+        left: -256%;
+        top: 305%;
+    }
+    50% {
+        left: -256%;
+        top: 450%;
+    }
+    100% {
+        left: -256%;
+        top: 450%;
+    }
