@@ -3,14 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>DARE System Documentation</title>
-    <meta author="Anthony Ferlazzo, 925-399-5359">
+    <meta name="author" content="Anthony Ferlazzo" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no, minimum-scale = 1.0, maximum-scale = 1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
     <div class="wrapper">
+        <header>
+            <h1>DARE - Data Center Capacity Reporting</h1>
+        </header>
+        <nav>
+            <div id="control">
+                <button id="toggle-animation" onclick="toggle_animation()" class="btn-small">Toggle Animation</button>
+            </div>
+        </nav>
+
         <div class="drawing">
             <div class="db one-seventh-width">
-                <div class="packet1"></div>
+                <h2>DemandPlan</h2>
+                <h3>Server Forecast</h3>
+                <div class="packet" id="packet1-1"></div>
+                <div class="packet" id="packet1-2"></div>
+                <div class="packet" id="packet1-3"></div>
+                <div class="packet" id="packet1-4"></div>
+                <div class="packet" id="packet1-5"></div>
+                <div class="packet" id="packet1-6"></div>
+                <div class="packet" id="packet1-7"></div>
+                <div class="packet" id="packet1-8"></div>
+                <div class="packet" id="packet1-9"></div>
+
                 <div class="db-top1"></div>
                 <div class="db-top2"></div>
                 <div class="db-top3"></div>
@@ -24,7 +48,18 @@
                 <div class="tube3"></div>
             </div>
             <div class="db one-seventh-width">
-                <div class="packet2"></div>
+                <h2>IFD</h2>
+                <h3>Platform Forecast</h3>
+                <div class="packet" id="packet2-1"></div>
+                <div class="packet" id="packet2-2"></div>
+                <div class="packet" id="packet2-3"></div>
+                <div class="packet" id="packet2-4"></div>
+                <div class="packet" id="packet2-5"></div>
+                <div class="packet" id="packet2-6"></div>
+                <div class="packet" id="packet2-7"></div>
+                <div class="packet" id="packet2-8"></div>
+                <div class="packet" id="packet2-9"></div>
+
                 <div class="db-top1"></div>
                 <div class="db-top2"></div>
                 <div class="db-top3"></div>
@@ -37,7 +72,18 @@
                 <div class="tube2"></div>
             </div>
             <div class="db one-seventh-width">
-                <div class="packet3"></div>
+                <h2>Optimal Touch</h2>
+                <h3>Tech Refresh Forecast</h3>
+                <div class="packet" id="packet3-1"></div>
+                <div class="packet" id="packet3-2"></div>
+                <div class="packet" id="packet3-3"></div>
+                <div class="packet" id="packet3-4"></div>
+                <div class="packet" id="packet3-5"></div>
+                <div class="packet" id="packet3-6"></div>
+                <div class="packet" id="packet3-7"></div>
+                <div class="packet" id="packet3-8"></div>
+                <div class="packet" id="packet3-9"></div>
+
                 <div class="db-top1"></div>
                 <div class="db-top2"></div>
                 <div class="db-top3"></div>
@@ -50,7 +96,18 @@
                 <div class="tube2"></div>
             </div>
             <div class="db one-seventh-width">
-                <div class="packet4"></div>
+                <h2>STSP</h2>
+                <h3>Physical/Virtual Actual</h3>
+                <div class="packet" id="packet4-1"></div>
+                <div class="packet" id="packet4-2"></div>
+                <div class="packet" id="packet4-3"></div>
+                <div class="packet" id="packet4-4"></div>
+                <div class="packet" id="packet4-5"></div>
+                <div class="packet" id="packet4-6"></div>
+                <div class="packet" id="packet4-7"></div>
+                <div class="packet" id="packet4-8"></div>
+                <div class="packet" id="packet4-9"></div>
+
                 <div class="db-top1"></div>
                 <div class="db-top2"></div>
                 <div class="db-top3"></div>
@@ -62,7 +119,18 @@
                 <div class="tube6"></div>
             </div>
             <div class="db one-seventh-width">
-                <div class="packet5"></div>
+                <h2>Product Catalog (EL)</h2>
+                <h3>Net Zoom Installs/Decomms</h3>
+                <div class="packet" id="packet5-1"></div>
+                <div class="packet" id="packet5-2"></div>
+                <div class="packet" id="packet5-3"></div>
+                <div class="packet" id="packet5-4"></div>
+                <div class="packet" id="packet5-5"></div>
+                <div class="packet" id="packet5-6"></div>
+                <div class="packet" id="packet5-7"></div>
+                <div class="packet" id="packet5-8"></div>
+                <div class="packet" id="packet5-9"></div>
+
                 <div class="db-top1"></div>
                 <div class="db-top2"></div>
                 <div class="db-top3"></div>
@@ -75,7 +143,18 @@
                 <div class="tube8"></div>
             </div>
             <div class="db one-seventh-width">
-                <div class="packet6"></div>
+                <h2>Remedy</h2>
+                <h3>Asset Data</h3>
+                <div class="packet" id="packet6-1"></div>
+                <div class="packet" id="packet6-2"></div>
+                <div class="packet" id="packet6-3"></div>
+                <div class="packet" id="packet6-4"></div>
+                <div class="packet" id="packet6-5"></div>
+                <div class="packet" id="packet6-6"></div>
+                <div class="packet" id="packet6-7"></div>
+                <div class="packet" id="packet6-8"></div>
+                <div class="packet" id="packet6-9"></div>
+
                 <div class="db-top1"></div>
                 <div class="db-top2"></div>
                 <div class="db-top3"></div>
@@ -88,7 +167,18 @@
                 <div class="tube8"></div>
             </div>
             <div class="db one-seventh-width">
-                <div class="packet7"></div>
+                <h2>BPR/DSC</h2>
+                <h3>Catalog</h3>
+                <div class="packet" id="packet7-1"></div>
+                <div class="packet" id="packet7-2"></div>
+                <div class="packet" id="packet7-3"></div>
+                <div class="packet" id="packet7-4"></div>
+                <div class="packet" id="packet7-5"></div>
+                <div class="packet" id="packet7-6"></div>
+                <div class="packet" id="packet7-7"></div>
+                <div class="packet" id="packet7-8"></div>
+                <div class="packet" id="packet7-9"></div>
+
                 <div class="db-top1"></div>
                 <div class="db-top2"></div>
                 <div class="db-top3"></div>
@@ -134,9 +224,8 @@
             <div class="one-seventh-width grid-formatting"></div>
             <div class="one-seventh-width grid-formatting"></div>
             <div class="one-seventh-width grid-formatting"></div>
-
-
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
