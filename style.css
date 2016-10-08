@@ -41,6 +41,7 @@ nav #control {
     margin-top: 0;
     height: 2.5em;
 }
+/* there are 7 funnels */
 .one-seventh-width {
     width: 14.2%;
     height: 100%;
@@ -54,6 +55,7 @@ nav #control {
     height: 20%;
     */
 }
+/* db are ovals that depict the database cylinders */
 .db {
     height: 10%
 }
@@ -63,7 +65,7 @@ nav #control {
 .db-top4,
 .db-top5 {
     width: 70%;
-    border: 4px solid rgba(31, 156, 150, 0.3);
+    border: 4px solid rgba(188, 175, 193, 0.3);
     height: 30%;
     border-radius: 50%;
     left: 15%;
@@ -71,6 +73,7 @@ nav #control {
     z-index: 7;
     position: relative;
 }
+/* this trick uses the :before pseudo elements of the ovals to make a second border for divs */
 .db-top1:before,
 .db-top2:before,
 .db-top3:before,
@@ -86,13 +89,14 @@ nav #control {
     border: 1px solid #333;
     border-radius: 50%;
 }
+/* the colors of the ovals */
 .db-top2,
 .db-top3,
 .db-top4,
 .db-top5 {
     background-color: rgba(31, 156, 150, 0.3);
 }
-
+/* the distance above the db-top1 oval */
 .db-top2 {
     top: -26%;
 }
@@ -109,11 +113,7 @@ nav #control {
 
 
 
-
-.db-top1 {
-}
-.db-top4 {
-}
+/* the last oval is slightly different to help with the 3-d effect */
 .db-top6 {
     top: -51%;
     width: 90%;
@@ -124,12 +124,12 @@ nav #control {
 }
 .funnel1 {
     width: 70%;
-    border: 1px solid #333;
     height: 26%;
     border-radius: 50%;
     top: 76%;
     left: 17%;
     background-color: #15abe4;
+    border: 1px solid #fff;
     z-index: 4;
     position: absolute;
     box-shadow: 0 7px 21px #660 inset;
@@ -149,6 +149,7 @@ nav #control {
     clip-path: polygon(4% 22%, 4% 21%, 8% 25%, 11% 30%, 20% 34%, 36% 40%,
     47% 42%, 67% 41%, 81% 37%, 90% 34%, 97% 29%, 109% 15%, 110% 0%, 73% 100%, 28% 100%);
 }
+/* vertical tubes */
 .tube1, .tube6 {
     background-color: rgba(31, 156, 150, 0.4);
     top: 136.9%;
@@ -160,6 +161,25 @@ nav #control {
 }
 .tube6 {
     height: 294%;
+}
+/* to give the tube a 3-d effect */
+.tube1:before, .tube2:before, .tube6:before, .tube6:after, .tube8:before {
+    content: " ";
+    position: absolute;
+    z-index: 7;
+    left: 10%;
+    top: 0;
+    width: 8%;
+    height: 100%;
+    background-color: #fff;
+    /*border-radius: 3px;*/
+}
+.tube6:before {
+    height: 43%;
+}
+.tube6:after {
+    top:70%;
+    height: 27%;
 }
 .tube2 {
     background-color: rgba(31, 156, 150, 0.4);
@@ -225,14 +245,16 @@ nav #control {
     position: absolute;
     border-radius:4px;
     z-index: 5;
-    animation-duration: 9s;
-    //animation-timing-function: cubic-bezier(.8,.1,1,.04);
+    animation-duration: 9s, 9s;
+    animation-delay: 0s, 10s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
     top: 0;
 }
 #packet1-1, #packet1-2, #packet1-3, #packet1-4, #packet1-5, #packet1-6, #packet1-7, #packet1-8, #packet1-9 {
     animation-name: drop1;
-    left: 48%;
+    animation-delay: 0s;
+    left: 45%;
     background-color: #228b22;
 }
 #packet1-2 {
@@ -261,7 +283,8 @@ nav #control {
 }
 #packet2-1, #packet2-2, #packet2-3, #packet2-4, #packet2-5, #packet2-6, #packet2-7, #packet2-8, #packet2-9 {
     animation-name: drop2;
-    left: 48%;
+    animation-delay: 0s;
+    left: 45%;
     background-color: deepskyblue;
 }
 #packet2-2 {
@@ -290,7 +313,7 @@ nav #control {
 }
 #packet3-1, #packet3-2, #packet3-3, #packet3-4, #packet3-5, #packet3-6, #packet3-7, #packet3-8, #packet3-9 {
     animation-name: drop3;
-    left: 48%;
+    left: 45%;
     background-color: #e6951a;
 }
 #packet3-2 {
@@ -319,7 +342,7 @@ nav #control {
 }
 #packet4-1, #packet4-2, #packet4-3, #packet4-4, #packet4-5, #packet4-6, #packet4-7, #packet4-8, #packet4-9 {
     animation-name: drop4;
-    left: 48%;
+    left: 44%;
     background-color: purple;
 }
 #packet4-2 {
@@ -348,7 +371,7 @@ nav #control {
 }
 #packet5-1, #packet5-2, #packet5-3, #packet5-4, #packet5-5, #packet5-6, #packet5-7, #packet5-8, #packet5-9 {
     animation-name: drop5;
-    left: 48%;
+    left: 45%;
     background-color: brown;
 }
 #packet5-2 {
@@ -377,7 +400,7 @@ nav #control {
 }
 #packet6-1, #packet6-2, #packet6-3, #packet6-4, #packet6-5, #packet6-6, #packet6-7, #packet6-8, #packet6-9 {
     animation-name: drop6;
-    left: 48%;
+    left: 45%;
     background-color: #000;
 }
 #packet6-2 {
@@ -433,6 +456,10 @@ nav #control {
 #packet7-9 {
     animation-delay: 8s;
 }
+
+
+/* ------------------------------------------------- */
+
 @keyframes drop1 {
     0% {
         left: 45%;
@@ -443,17 +470,24 @@ nav #control {
         top: 220%;
     }
     10% {
-        left: 76%;
+        left: 78%;
         top: 290%;
     }
     15% {
         left: 344%;
         top: 290%;
     }
-
-    20%, 100% {
+    20% {
         left: 344%;
-        top: 450%;
+        top: 451%;
+    }
+    21% {
+        left: 350%;
+        top: 451%;
+    }
+    100% {
+        left: 699%;
+        top: 455%;
     }
 }
 @keyframes drop2 {
@@ -473,9 +507,17 @@ nav #control {
         left: 244%;
         top: 290%;
     }
-    25%, 100% {
+    25% {
         left: 244%;
-        top: 450%;
+        top: 451%;
+    }
+    27% {
+        left: 250%;
+        top: 451%;
+    }
+    100% {
+        left: 575%;
+        top: 455%;
     }
 }
 @keyframes drop3 {
@@ -497,7 +539,7 @@ nav #control {
     }
     30%, 100% {
         left: 144%;
-        top: 450%;
+        top: 451%;
     }
 }
 @keyframes drop4 {
@@ -520,7 +562,7 @@ nav #control {
 
     40%, 100% {
         left: 44%;
-        top: 450%;
+        top: 451%;
     }
 }
 @keyframes drop5 {
@@ -543,7 +585,7 @@ nav #control {
 
     45%, 100% {
         left: -56%;
-        top: 450%;
+        top: 451%;
     }
 }
 @keyframes drop6 {
@@ -565,7 +607,7 @@ nav #control {
     }
     50%, 100% {
         left: -156%;
-        top: 450%;
+        top: 451%;
     }
 }
 @keyframes drop7 {
@@ -587,6 +629,76 @@ nav #control {
     }
     55%, 100% {
         left: -256%;
-        top: 450%;
+        top: 451%;
     }
 }
+.step1 {
+    margin: 28% 0 0 12%;
+    width: 33%;
+}
+.step2 {
+    margin: 36% 0 0 55%;
+    width: 33%;
+}
+#conveyor-belt-container {
+    width: 495px;
+    margin: 4% 0 0 38%;
+}
+#conveyor-belt {
+    margin: 4.8% 0 0 10%;
+    height: 2.6em;
+    width: 100%;
+    border: 2px solid #000;
+    border-radius: 14px;
+    z-index: 10;
+    position: relative;
+}
+.conveyor-belt-roller {
+    width: 1em;
+    height: 1em;
+    border: 2px solid #00f;
+    border-radius: 50%;
+    margin: 0.7em 0 0 0.4em;
+    float: left;
+    line-height: 1.2em;
+    text-indent: 0.2em;
+    font-size: 1em;
+    font-weight: 700;
+    animation-name: spin;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+/*
+.packet {display: none;}
+#packet1-1,
+#packet1-2,
+#packet1-3,
+#packet1-4,
+#packet1-5,
+#packet1-6,
+#packet1-7,
+#packet1-8,
+#packet1-9 {display: block;}
+#packet1-1 {background-color: red;}
+#packet1-2 {background-color: darkred;}
+#packet1-3 {background-color: indianred;}
+#packet1-4 {background-color: blue;}
+#packet1-5 {background-color: cornflowerblue;}
+#packet1-6 {background-color: blueviolet;}
+#packet1-7 {background-color: green;}
+#packet1-8 {background-color: greenyellow;}
+#packet1-9 {background-color: darkolivegreen;}
+*/

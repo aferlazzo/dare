@@ -29,6 +29,9 @@ function toggle_animation() {
     var j;
     var packet;
     var thisPacket;
+    var roller = [];
+
+    roller = document.getElementsByClassName("conveyor-belt-roller");
 
     for (i = 1; i < 8; i++) {
         if (animationRunning === true) {
@@ -37,7 +40,12 @@ function toggle_animation() {
                 packet = document.getElementById(thisPacket);
                 addClass(packet, "pause-animation");
                 removeClass(packet, "start-automation");
-                console.log("pausing " + thisPacket);
+                //console.log("pausing " + thisPacket);
+            }
+            for (j = 0; j < roller.length; j++) {
+                addClass(roller[j], "pause-animation");
+                removeClass(roller[j], "start-automation");
+                console.log("pausing roller[" + j +"]");
             }
         } else {
             for (j = 1; j < 10; j++) {
@@ -46,6 +54,11 @@ function toggle_animation() {
                 removeClass(packet, "pause-animation");
                 addClass(packet, "start-automation");
                 console.log("restarting " + thisPacket);
+            }
+            for (j = 0; j < roller.length; j++) {
+                removeClass(roller[j], "pause-animation");
+                addClass(roller[j], "start-automation");
+                console.log("restarting roller[" + j +"]");
             }
         }
     }
