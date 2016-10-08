@@ -94,7 +94,7 @@ nav #control {
 .db-top3,
 .db-top4,
 .db-top5 {
-    background-color: rgba(31, 156, 150, 0.3);
+    background-color: rgba(110, 207, 263, 0.3);
 }
 /* the distance above the db-top1 oval */
 .db-top2 {
@@ -108,7 +108,7 @@ nav #control {
 }
 .db-top5 {
     top: -115%;
-    box-shadow: 0 3px 3px rgba(0,0,0,0.7);
+    box-shadow: 2px 1px 6px rgba(0,0,0,0.7);
 }
 
 
@@ -128,11 +128,11 @@ nav #control {
     border-radius: 50%;
     top: 76%;
     left: 17%;
-    background-color: #15abe4;
+    background-color: rgb(126, 159, 110);
     border: 1px solid #fff;
     z-index: 4;
     position: absolute;
-    box-shadow: 0 7px 21px #660 inset;
+    box-shadow: 0 7px 21px rgb(95, 73, 176) inset;
 }
 
 .funnel2 {
@@ -142,6 +142,9 @@ nav #control {
     width: 71%;
     height: 56%;
     background-color: rgba(31, 156, 150, 0.4);
+    background: #283048; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, rgba(40, 155, 161, 0.5) , rgba(229, 211, 198, 0.6));
+    background: linear-gradient(to left, rgba(40, 155, 161, 0.5) , rgba(229, 211, 198, 0.6));
     z-index: 7;
     position: absolute;
     -webkit-clip-path: polygon(4% 22%, 4% 21%, 8% 25%, 11% 30%, 20% 34%, 36% 40%,
@@ -152,37 +155,25 @@ nav #control {
 /* vertical tubes */
 .tube1, .tube6 {
     background-color: rgba(31, 156, 150, 0.4);
+    background: #283048;
+    background: -webkit-linear-gradient(to left, rgba(40, 155, 161, 0.5) , rgba(229, 211, 198, 0.6));
+    background: linear-gradient(to left, rgba(40, 155, 161, 0.5) , rgba(229, 211, 198, 0.6));
     top: 136.9%;
     left: 35%;
     width: 32%;
-    height: 99.2%;
+    height: 98.6%;
     z-index: 7;
     position: absolute;
+    box-shadow: 2px 1px 6px rgba(0,0,0,0.3);
 }
 .tube6 {
     height: 294%;
 }
-/* to give the tube a 3-d effect */
-.tube1:before, .tube2:before, .tube6:before, .tube6:after, .tube8:before {
-    content: " ";
-    position: absolute;
-    z-index: 7;
-    left: 10%;
-    top: 0;
-    width: 8%;
-    height: 100%;
-    background-color: #fff;
-    /*border-radius: 3px;*/
-}
-.tube6:before {
-    height: 43%;
-}
-.tube6:after {
-    top:70%;
-    height: 27%;
-}
 .tube2 {
     background-color: rgba(31, 156, 150, 0.4);
+    background: #283048; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, rgba(40, 155, 161, 0.5) , rgba(229, 211, 198, 0.6));
+    background: linear-gradient(to left, rgba(40, 155, 161, 0.5) , rgba(229, 211, 198, 0.6));
     top: 236%;
     left: 46%;
     right: 34%;
@@ -193,20 +184,30 @@ nav #control {
     border-bottom: 0;
     z-index: 7;
     position: absolute;
+    box-shadow: 2px 1px 6px rgba(0,0,0,0.3);
 }
 .tube3 {
     background-color: rgba(31, 156, 150, 0.4);
+    background: #283048; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, rgba(40, 155, 161, 0.5) , rgba(229, 211, 198, 0.6));
+    background: linear-gradient(to top, rgba(40, 155, 161, 0.5) , rgba(229, 211, 198, 0.6));
     top:278%;
     left: 71%;
     width: 278%;
     height: 53%;
     transform: skew(45deg);
     z-index: 7;
+    -webkit-clip-path: polygon(0 0, 98.5% 0, 88% 80%, 0 80%);
+    clip-path: polygon(0 0, 98.5% 0, 88% 80%, 0 80%);
     position: absolute;
+    box-shadow: 5px 1px 7px rgba(0,0,0,0.3);
 }
 
 .tube4, .tube8 {
     background-color: rgba(31, 156, 150, 0.4);
+    background: #283048; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, rgba(40, 155, 161, 0.5) , rgba(229, 211, 198, 0.6));
+    background: linear-gradient(to left, rgba(40, 155, 161, 0.5) , rgba(229, 211, 198, 0.6));
     top: 236%;
     left: 24%;
     width: 32%;
@@ -214,20 +215,27 @@ nav #control {
     transform: skew(-45deg);
     z-index: 7;
     position: absolute;
+    box-shadow: 5px 1px 7px rgba(0,0,0,0.3);
 }
 .tube8 {
     left: 24%;
-    height: 42%;
+    height: 40%;
 }
 .tube5 {
     background-color: rgba(31, 156, 150, 0.4);
+    background: #283048; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, rgba(40, 155, 161, 0.5) , rgba(229, 211, 198, 0.6));
+    background: linear-gradient(to top, rgba(40, 155, 161, 0.5) , rgba(229, 211, 198, 0.6));
     top: 278%;
     left: -247%;
     width: 278%;
     height: 53%;
     transform: skew(-45deg);
+    -webkit-clip-path: polygon(-1% 0, 99% 0, 100% 75%, 9% 77%);
+    clip-path: polygon(-1% 0, 99% 0, 100% 75%, 9% 77%);
     z-index: 7;
     position: absolute;
+    box-shadow: 5px 1px 7px rgba(0,0,0,0.3);
 }
 #control {
     position: relative;
@@ -690,6 +698,7 @@ nav #control {
     border-radius: 14px;
     z-index: 10;
     position: relative;
+    box-shadow: 4px 1px 3px rgba(0,0,0,0.7);
 }
 .conveyor-belt-roller {
     width: 1em;
@@ -698,7 +707,7 @@ nav #control {
     border-radius: 50%;
     margin: 0.7em 0 0 0.4em;
     float: left;
-    line-height: 1.2em;
+    line-height: 1.5em;
     text-indent: 0.2em;
     font-size: 1em;
     font-weight: 700;
@@ -726,7 +735,8 @@ nav #control {
     border-radius: 1em;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    width: 90%;
+    width: 92%;
     height: 6em;
     background-color: #4d7992;
+    box-shadow: 4px 1px 3px rgba(0,0,0,0.7);
 }
