@@ -245,8 +245,8 @@ nav #control {
     position: absolute;
     border-radius:4px;
     z-index: 5;
-    animation-duration: 9s, 9s;
-    animation-delay: 0s, 10s;
+    animation-duration: 8s;
+    animation-delay: 0s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     top: 0;
@@ -258,28 +258,28 @@ nav #control {
     background-color: #228b22;
 }
 #packet1-2 {
-    animation-delay: 1s;
+    animation-delay: 8s;
 }
 #packet1-3 {
-    animation-delay: 2s;
+    animation-delay: 16s;
 }
 #packet1-4 {
-    animation-delay: 3s;
+    animation-delay: 24s;
 }
 #packet1-5 {
-    animation-delay: 4s;
+    animation-delay: 32s;
 }
 #packet1-6 {
-    animation-delay: 5s;
+    animation-delay: 40s;
 }
 #packet1-7 {
-    animation-delay: 6s;
+    animation-delay: 48s;
 }
 #packet1-8 {
-    animation-delay: 7s;
+    animation-delay: 56s;
 }
 #packet1-9 {
-    animation-delay: 8s;
+    animation-delay: 64s;
 }
 #packet2-1, #packet2-2, #packet2-3, #packet2-4, #packet2-5, #packet2-6, #packet2-7, #packet2-8, #packet2-9 {
     animation-name: drop2;
@@ -288,28 +288,28 @@ nav #control {
     background-color: deepskyblue;
 }
 #packet2-2 {
-    animation-delay: 1s;
+    animation-delay: 8s;
 }
 #packet2-3 {
-    animation-delay: 2s;
+    animation-delay: 16s;
 }
 #packet2-4 {
-    animation-delay: 3s;
+    animation-delay: 24s;
 }
 #packet2-5 {
-    animation-delay: 4s;
+    animation-delay: 32s;
 }
 #packet2-6 {
-    animation-delay: 5s;
+    animation-delay: 40s;
 }
 #packet2-7 {
-    animation-delay: 6s;
+    animation-delay: 48s;
 }
 #packet2-8 {
-    animation-delay: 7s;
+    animation-delay: 56s;
 }
 #packet2-9 {
-    animation-delay: 8s;
+    animation-delay: 64s;
 }
 #packet3-1, #packet3-2, #packet3-3, #packet3-4, #packet3-5, #packet3-6, #packet3-7, #packet3-8, #packet3-9 {
     animation-name: drop3;
@@ -317,28 +317,28 @@ nav #control {
     background-color: #e6951a;
 }
 #packet3-2 {
-    animation-delay: 1s;
+    animation-delay: 8s;
 }
 #packet3-3 {
-    animation-delay: 2s;
+    animation-delay: 16s;
 }
 #packet3-4 {
-    animation-delay: 3s;
+    animation-delay: 24s;
 }
 #packet3-5 {
-    animation-delay: 4s;
+    animation-delay: 32s;
 }
 #packet3-6 {
-    animation-delay: 5s;
+    animation-delay: 40s;
 }
 #packet3-7 {
-    animation-delay: 6s;
+    animation-delay: 48s;
 }
 #packet3-8 {
-    animation-delay: 7s;
+    animation-delay: 56s;
 }
 #packet3-9 {
-    animation-delay: 8s;
+    animation-delay: 64s;
 }
 #packet4-1, #packet4-2, #packet4-3, #packet4-4, #packet4-5, #packet4-6, #packet4-7, #packet4-8, #packet4-9 {
     animation-name: drop4;
@@ -346,28 +346,28 @@ nav #control {
     background-color: purple;
 }
 #packet4-2 {
-    animation-delay: 1s;
+    animation-delay: 8s;
 }
 #packet4-3 {
-    animation-delay: 2s;
+    animation-delay: 16s;
 }
 #packet4-4 {
-    animation-delay: 3s;
+    animation-delay: 24s;
 }
 #packet4-5 {
-    animation-delay: 4s;
+    animation-delay: 32s;
 }
 #packet4-6 {
-    animation-delay: 5s;
+    animation-delay: 40s;
 }
 #packet4-7 {
-    animation-delay: 6s;
+    animation-delay: 48s;
 }
 #packet4-8 {
-    animation-delay: 7s;
+    animation-delay: 56s;
 }
 #packet4-9 {
-    animation-delay: 8s;
+    animation-delay: 64s;
 }
 #packet5-1, #packet5-2, #packet5-3, #packet5-4, #packet5-5, #packet5-6, #packet5-7, #packet5-8, #packet5-9 {
     animation-name: drop5;
@@ -375,28 +375,28 @@ nav #control {
     background-color: brown;
 }
 #packet5-2 {
-    animation-delay: 1s;
+    animation-delay: 8s;
 }
 #packet5-3 {
-    animation-delay: 2s;
+    animation-delay: 16s;
 }
 #packet5-4 {
-    animation-delay: 3s;
+    animation-delay: 24s;
 }
 #packet5-5 {
-    animation-delay: 4s;
+    animation-delay: 32s;
 }
 #packet5-6 {
-    animation-delay: 5s;
+    animation-delay: 40s;
 }
 #packet5-7 {
-    animation-delay: 6s;
+    animation-delay: 48s;
 }
 #packet5-8 {
-    animation-delay: 7s;
+    animation-delay: 56s;
 }
 #packet5-9 {
-    animation-delay: 8s;
+    animation-delay: 64s;
 }
 #packet6-1, #packet6-2, #packet6-3, #packet6-4, #packet6-5, #packet6-6, #packet6-7, #packet6-8, #packet6-9 {
     animation-name: drop6;
@@ -404,28 +404,28 @@ nav #control {
     background-color: #000;
 }
 #packet6-2 {
-    animation-delay: 1s;
+    animation-delay: 8s;
 }
 #packet6-3 {
-    animation-delay: 2s;
+    animation-delay: 16s;
 }
 #packet6-4 {
-    animation-delay: 3s;
+    animation-delay: 24s;
 }
 #packet6-5 {
-    animation-delay: 4s;
+    animation-delay: 32s;
 }
 #packet6-6 {
-    animation-delay: 5s;
+    animation-delay: 40s;
 }
 #packet6-7 {
-    animation-delay: 6s;
+    animation-delay: 48s;
  }
 #packet6-8 {
-    animation-delay: 7s;
+    animation-delay: 56s;
 }
 #packet6-9 {
-    animation-delay: 8s;
+    animation-delay: 64s;
 }
 #packet7-1, #packet7-2, #packet7-3, #packet7-4, #packet7-5, #packet7-6, #packet7-7, #packet7-8, #packet7-9 {
     animation-name: drop7;
@@ -433,28 +433,28 @@ nav #control {
     background-color: red;
 }
 #packet7-2 {
-    animation-delay: 1s;
+    animation-delay: 8s;
 }
 #packet7-3 {
-    animation-delay: 2s;
+    animation-delay: 16s;
 }
 #packet7-4 {
-    animation-delay: 3s;
+    animation-delay: 24s;
 }
 #packet7-5 {
-    animation-delay: 4s;
+    animation-delay: 32s;
 }
 #packet7-6 {
-    animation-delay: 5s;
+    animation-delay: 40s;
 }
 #packet7-7 {
-    animation-delay: 6s;
+    animation-delay: 48s;
 }
 #packet7-8 {
-    animation-delay: 7s;
+    animation-delay: 56s;
 }
 #packet7-9 {
-    animation-delay: 8s;
+    animation-delay: 64s;
 }
 
 
@@ -479,15 +479,15 @@ nav #control {
     }
     20% {
         left: 344%;
-        top: 451%;
+        top: 452%;
     }
     21% {
         left: 350%;
-        top: 451%;
+        top: 452%;
     }
-    100% {
-        left: 699%;
-        top: 455%;
+    75%, 100% {
+        left: 749%;
+        top: 452%;
     }
 }
 @keyframes drop2 {
@@ -503,21 +503,21 @@ nav #control {
         left: 74%;
         top: 290%;
     }
-    15% {
+    15%, 17% {
         left: 244%;
         top: 290%;
     }
     25% {
         left: 244%;
-        top: 451%;
+        top: 452%;
     }
-    27% {
+    26% {
         left: 250%;
-        top: 451%;
+        top: 452%;
     }
-    100% {
-        left: 575%;
-        top: 455%;
+    75%, 100% {
+        left: 626%;
+        top: 452%;
     }
 }
 @keyframes drop3 {
@@ -533,13 +533,21 @@ nav #control {
         left: 75%;
         top: 290%;
     }
-    15% {
+    15%, 19% {
         left: 144%;
         top: 290%;
     }
-    30%, 100% {
+    30% {
         left: 144%;
-        top: 451%;
+        top: 452%;
+    }
+    31% {
+        left: 146%;
+        top: 452%;
+    }
+    75%, 100% {
+        left: 501%;
+        top: 452%;
     }
 }
 @keyframes drop4 {
@@ -555,14 +563,21 @@ nav #control {
         left: 44%;
         top: 290%;
     }
-    15% {
+    15%, 24%  {
         left: 44%;
         top: 290%;
     }
-
-    40%, 100% {
+    35% {
         left: 44%;
-        top: 451%;
+        top: 443%;
+    }
+    36% {
+        left: 44%;
+        top: 452%;
+    }
+    75%, 100% {
+        left: 377%;
+        top: 452%;
     }
 }
 @keyframes drop5 {
@@ -578,13 +593,20 @@ nav #control {
         left: 8%;
         top: 290%;
     }
-    15% {
+    15%, 27% {
         left: -56%;
         top: 290%;
     }
-
-    45%, 100% {
+    42% {
         left: -56%;
+        top: 451%;
+    }
+    43% {
+        left: -52%;
+        top: 451%;
+    }
+    75%, 100% {
+        left: 255%;
         top: 451%;
     }
 }
@@ -601,12 +623,20 @@ nav #control {
         left: 10%;
         top: 290%;
     }
-    15% {
+    15%, 32% {
         left: -156%;
         top: 290%;
     }
-    50%, 100% {
+    47%{
         left: -156%;
+        top: 451%;
+    }
+    48%{
+        left: -156%;
+        top: 451%;
+    }
+    75%, 100% {
+        left: 132%;
         top: 451%;
     }
 }
@@ -623,12 +653,20 @@ nav #control {
         left: 8%;
         top: 290%;
     }
-    15% {
+    15%, 36% {
         left: -256%;
         top: 290%;
     }
-    55%, 100% {
+    54% {
         left: -256%;
+        top: 451%;
+    }
+    55% {
+        left: -252%;
+        top: 451%;
+    }
+    75%, 100% {
+        left: 10%;
         top: 451%;
     }
 }
@@ -641,7 +679,7 @@ nav #control {
     width: 33%;
 }
 #conveyor-belt-container {
-    width: 495px;
+    width: 404px;
     margin: 4% 0 0 38%;
 }
 #conveyor-belt {
@@ -681,24 +719,14 @@ nav #control {
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
 }
-/*
-.packet {display: none;}
-#packet1-1,
-#packet1-2,
-#packet1-3,
-#packet1-4,
-#packet1-5,
-#packet1-6,
-#packet1-7,
-#packet1-8,
-#packet1-9 {display: block;}
-#packet1-1 {background-color: red;}
-#packet1-2 {background-color: darkred;}
-#packet1-3 {background-color: indianred;}
-#packet1-4 {background-color: blue;}
-#packet1-5 {background-color: cornflowerblue;}
-#packet1-6 {background-color: blueviolet;}
-#packet1-7 {background-color: green;}
-#packet1-8 {background-color: greenyellow;}
-#packet1-9 {background-color: darkolivegreen;}
-*/
+.conveyor-belt-base {
+    margin-left: 14%;
+    border: 2px solid #000;
+    border-top: 0;
+    border-radius: 1em;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 90%;
+    height: 6em;
+    background-color: #4d7992;
+}
