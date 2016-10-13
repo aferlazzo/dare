@@ -13,14 +13,9 @@
 <body>
     <div class="wrapper">
         <header>
+            <img src="wfsmpheader.gif">
             <h1>DARE - Data Center Capacity Reporting</h1>
         </header>
-        <nav>
-            <div id="control">
-                <button id="toggle-animation" onclick="toggle_animation()" class="btn-small">Toggle Animation</button>
-            </div>
-        </nav>
-
         <div class="drawing">
             <div class="db one-seventh-width">
                 <h2>DemandPlan</h2>
@@ -198,6 +193,7 @@
                 <div class="tube8"></div>
                 <div class="tube5"></div>
             </div>
+            <div id="dare_server"><span>DARE Server</span></div>
             <div class="step1"><p>Step One: Export asset data from multiple databases and normalize it</p></div>
         </div>
         <div class="step2"><p>Step Two: Place the aggregated data on the DARE server</p></div>
@@ -217,50 +213,84 @@
                 <div class="conveyor-belt-roller">*</div>
                 <div class="conveyor-belt-roller">*</div>
                 <div class="conveyor-belt-roller">*</div>
-                <div class="conveyor-belt-roller">*</div>
-                <div class="conveyor-belt-roller">*</div>
-                <div class="conveyor-belt-roller">*</div>
-                <div class="conveyor-belt-roller">*</div>
-                <div class="conveyor-belt-roller">*</div>
-                <div class="conveyor-belt-roller">*</div>
-                <div class="conveyor-belt-roller">*</div>
             </div>
-            <div class="conveyor-belt-base"></div>
+            <div class="conveyor-belt-base">
+                <nav>
+                    <div id="control">
+                        <button id="toggle-animation" onclick="toggle_animation()" class="btn-small">Toggle Processing</button>
+                    </div>
+                </nav>
+            </div>
         </div>
 
-        <div class="grid">
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
+        <div class="drawing">
+            <div class="bar-chart-wrapper">
+                <div class="bar-chart">
+                    <div class="flex-item-1">
+                        <div class="cat cat1"></div>
+                        <span>2016 Q1</span>
+                    </div>
+                    <div class="flex-item-2">
+                        <div class="cat cat2"></div>
+                        <span>2016 Q2</span>
+                   </div>
+                    <div class="flex-item-3">
+                        <div class="cat cat3"></div>
+                        <span>2016 Q3</span>
+                    </div>
+                    <div class="flex-item-4">
+                        <div class="cat cat4"></div>
+                        <span>2016 Q4</span>
+                     </div>
+                    <div class="flex-item-5">
+                        <div class="cat cat5"></div>
+                        <span>2017 Q1</span>
+                    </div>
+                    <div class="flex-item-6">
+                        <div class="cat cat6"></div>
+                        <span>2017 Q2</span>
+                    </div>
+                    <div class="flex-item-7">
+                        <div class="cat cat7"></div>
+                        <span>2017 Q3</span>
+                    </div>
+                </div><h3>Planned vs. Actual Ports<br>(sample report)</h3></div>
 
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
+             </div>
 
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
-            <div class="one-seventh-width grid-formatting"></div>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+             <div class="grid">
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+                 <div class="one-seventh-width grid-formatting"></div>
+             </div>
+         </div>
+         <script src="script.js"></script>
+     </body>
+     </html>

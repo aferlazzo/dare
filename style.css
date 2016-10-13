@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
 }
+header img {
+    display: block;
+    margin: 0 auto;
+}
 header h1 {
     text-align: center;
-}
-nav #control {
-    margin: -3em 0 5em 85%;
+    font-size: 2em;
 }
 .wrapper {
     width:1024px;
@@ -27,7 +29,7 @@ nav #control {
     height: 100%;
     position: absolute;
     z-index: 1;
-    margin-top: 1em;
+    margin-top: 5em;
 }
 .drawing h2 {
     font-size: 1em;
@@ -237,6 +239,23 @@ nav #control {
     position: absolute;
     box-shadow: 5px 1px 7px rgba(0,0,0,0.3);
 }
+#dare_server {
+    width: 9em;
+    height: 9em;
+    border: 2px solid #00f;
+    border-radius: 8px 8px 0 0;
+    background: #999;
+    position: relative;
+    margin: 19.6em 0 0 31.9em;
+    z-index: 10;
+}
+#dare_server span {
+    display: inline-block;
+    margin: 2em 0 0 1.5em;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #0f0f0f;
+}
 #control {
     position: relative;
     z-index:100;
@@ -263,6 +282,9 @@ nav #control {
     animation-name: drop1;
     animation-delay: 0s;
     left: 45%;
+    background-color: #228b22;
+}
+.cat1 {
     background-color: #228b22;
 }
 #packet1-2 {
@@ -293,7 +315,10 @@ nav #control {
     animation-name: drop2;
     animation-delay: 0s;
     left: 45%;
-    background-color: deepskyblue;
+    background-color: #00BFFF;
+}
+.cat2 {
+    background-color: #00BFFF;
 }
 #packet2-2 {
     animation-delay: 8s;
@@ -324,6 +349,9 @@ nav #control {
     left: 45%;
     background-color: #e6951a;
 }
+.cat3 {
+    background-color: #e6951a;
+}
 #packet3-2 {
     animation-delay: 8s;
 }
@@ -351,7 +379,10 @@ nav #control {
 #packet4-1, #packet4-2, #packet4-3, #packet4-4, #packet4-5, #packet4-6, #packet4-7, #packet4-8, #packet4-9 {
     animation-name: drop4;
     left: 44%;
-    background-color: purple;
+    background-color: #800080;
+}
+.cat4 {
+    background-color: #800080;
 }
 #packet4-2 {
     animation-delay: 8s;
@@ -380,7 +411,10 @@ nav #control {
 #packet5-1, #packet5-2, #packet5-3, #packet5-4, #packet5-5, #packet5-6, #packet5-7, #packet5-8, #packet5-9 {
     animation-name: drop5;
     left: 45%;
-    background-color: brown;
+    background-color: #A52A2A;
+}
+.cat5 {
+    background-color: #A52A2A;
 }
 #packet5-2 {
     animation-delay: 8s;
@@ -411,6 +445,9 @@ nav #control {
     left: 45%;
     background-color: #000;
 }
+.cat6 {
+    background-color: #000;
+}
 #packet6-2 {
     animation-delay: 8s;
 }
@@ -438,7 +475,10 @@ nav #control {
 #packet7-1, #packet7-2, #packet7-3, #packet7-4, #packet7-5, #packet7-6, #packet7-7, #packet7-8, #packet7-9 {
     animation-name: drop7;
     left: 45%;
-    background-color: red;
+    background-color: #f00;
+}
+.cat7 {
+    background-color: #f00;
 }
 #packet7-2 {
     animation-delay: 8s;
@@ -485,19 +525,38 @@ nav #control {
         left: 344%;
         top: 290%;
     }
-    20% {
+    18% {
         left: 344%;
-        top: 452%;
+        top: 479%;
     }
     21% {
         left: 350%;
-        top: 452%;
+        top: 479%;
+    }
+    50% {
+        left: 559%;
+        top: 457%;
+    }
+    60% {
+        left: 631%;
+        top: 472%;
+    }
+    62% {
+        left: 640%;
+        top: 457%;
+    }
+    64% {
+        left: 610%;
+        top: 482%;
+    }
+    68% {
+        left: 615%;
+        top: 630%;
     }
     75%, 100% {
-        left: 749%;
-        top: 452%;
-    }
-}
+        left: 615%;
+        top: 712%;
+    }}
 @keyframes drop2 {
     0% {
         left: 45%;
@@ -511,21 +570,33 @@ nav #control {
         left: 74%;
         top: 290%;
     }
-    15%, 17% {
+    15% {
         left: 244%;
         top: 290%;
     }
     25% {
         left: 244%;
-        top: 452%;
+        top: 480%;
     }
-    26% {
-        left: 250%;
-        top: 452%;
+    40% {
+        left: 364%;
+        top: 467%;
     }
-    75%, 100% {
-        left: 626%;
-        top: 452%;
+    55% {
+        left: 475%;
+        top: 455%;
+    }
+    60% {
+        left: 509%;
+        top: 482%;
+    }
+    75% {
+        left: 544%;
+        top: 640%;
+    }
+    100% {
+        left: 544%;
+        top: 705%;
     }
 }
 @keyframes drop3 {
@@ -546,16 +617,24 @@ nav #control {
         top: 290%;
     }
     30% {
-        left: 144%;
-        top: 452%;
+        left: 160%;
+        top: 477%;
     }
-    31% {
-        left: 146%;
-        top: 452%;
+    60% {
+        left: 398%;
+        top: 457%;
     }
-    75%, 100% {
-        left: 501%;
-        top: 452%;
+    70% {
+        left: 460%;
+        top: 500%;
+    }
+    75% {
+        left: 472%;
+        top: 542%;
+    }
+    100% {
+        left: 474%;
+        top: 692%;
     }
 }
 @keyframes drop4 {
@@ -563,29 +642,45 @@ nav #control {
         left: 44%;
         top: 4%;
     }
-    5% {
+    20% {
         left: 44%;
-        top: 220%;
-    }
-    10% {
-        left: 44%;
-        top: 290%;
-    }
-    15%, 24%  {
-        left: 44%;
-        top: 290%;
+        top: 483%;
     }
     35% {
-        left: 44%;
-        top: 443%;
+        left: 71%;
+        top: 476%;
     }
-    36% {
-        left: 44%;
-        top: 452%;
+    50% {
+        left: 191%;
+        top: 465%;
     }
-    75%, 100% {
-        left: 377%;
-        top: 452%;
+    65% {
+        left: 308%;
+        top: 453%;
+    }
+    70% {
+        left: 380%;
+        top: 475%;
+    }
+    75% {
+        left: 385%;
+        top: 480%;
+    }
+    80% {
+        left: 390%;
+        top: 485%;
+    }
+    85% {
+        left: 395%;
+        top: 518%;
+    }
+    90% {
+        left: 400%;
+        top: 520%;
+    }
+    100% {
+        left: 402%;
+        top: 688%;
     }
 }
 @keyframes drop5 {
@@ -601,21 +696,41 @@ nav #control {
         left: 8%;
         top: 290%;
     }
-    15%, 27% {
+    15% {
         left: -56%;
         top: 290%;
     }
-    42% {
-        left: -56%;
-        top: 451%;
+    25% {
+        left: -47%;
+        top: 480%;
     }
-    43% {
-        left: -52%;
-        top: 451%;
+    35% {
+        left: -32%;
+        top: 467%;
     }
-    75%, 100% {
-        left: 255%;
-        top: 451%;
+    40% {
+        left: -18%;
+        top: 476%;
+    }
+    50% {
+        left: 64%;
+        top: 467%;
+    }
+    55% {
+        left: 115%;
+        top: 466%;
+    }
+    65% {
+        left: 139%;
+        top: 450%;
+    }
+    75% {
+        left: 332%;
+        top: 538%;
+    }
+    100% {
+        left: 335%;
+        top: 676%;
     }
 }
 @keyframes drop6 {
@@ -631,21 +746,77 @@ nav #control {
         left: 10%;
         top: 290%;
     }
-    15%, 32% {
+    15% {
         left: -156%;
         top: 290%;
     }
-    47%{
+    20% {
         left: -156%;
-        top: 451%;
+        top: 475%;
     }
-    48%{
-        left: -156%;
-        top: 451%;
+    25% {
+        left: -150%;
+        top: 475%;
     }
-    75%, 100% {
-        left: 132%;
-        top: 451%;
+    30% {
+        left: -150%;
+        top: 446%;
+    }
+    35% {
+        left: -150%;
+        top: 475%;
+    }
+    40% {
+        left: -132%;
+        top: 475%;
+    }
+    45% {
+        left: -105%;
+        top: 476%;
+    }
+    50% {
+        left: -61%;
+        top: 471%;
+    }
+    55% {
+        left: -11%;
+        top: 463%;
+    }
+    60% {
+        left: 11%;
+        top: 463%;
+    }
+    65% {
+        left: 34%;
+        top: 461%;
+    }
+    70% {
+        left: 244%;
+        top: 477%;
+    }
+    75% {
+        left: 244%;
+        top: 484%;
+    }
+    80% {
+        left: 244%;
+        top: 484%;
+    }
+    85% {
+        left: 261%;
+        top: 513%;
+    }
+    90% {
+        left: 261%;
+        top: 513%;
+    }
+    95% {
+        left: 261%;
+        top: 513%;
+    }
+    100% {
+        left: 261%;
+        top: 646%;
     }
 }
 @keyframes drop7 {
@@ -661,29 +832,85 @@ nav #control {
         left: 8%;
         top: 290%;
     }
-    15%, 36% {
+    15% {
         left: -256%;
         top: 290%;
     }
-    54% {
+    20% {
         left: -256%;
-        top: 451%;
+        top: 477%;
+    }
+    25% {
+        left: -251%;
+        top: 467%;
+    }
+    30% {
+        left: -256%;
+        top: 477%;
+    }
+    35% {
+        left: -251%;
+        top: 467%;
+    }
+    40% {
+        left: -256%;
+        top: 477%;
+    }
+    45% {
+        left: -225%;
+        top: 467%;
+    }
+    50% {
+        left: -184%;
+        top: 473%;
     }
     55% {
-        left: -252%;
-        top: 451%;
+        left: -139%;
+        top: 467%;
     }
-    75%, 100% {
+    60% {
+        left: -106%;
+        top: 463%;
+    }
+    65% {
+        left: -84%;
+        top: 463%;
+    }
+    70% {
         left: 10%;
-        top: 451%;
+        top: 454%;
+    }
+    75% {
+        left: 60%;
+        top: 454%;
+    }
+    80% {
+        left: 123%;
+        top: 434%;
+    }    85% {
+        left: 153%;
+        top: 454%;
+    }
+    90% {
+        left: 173%;
+        top: 476%;
+    }
+    95% {
+        left: 190%;
+        top: 576%;
+    }
+
+    100% {
+        left: 191%;
+        top: 700%;
     }
 }
 .step1 {
-    margin: 28% 0 0 12%;
-    width: 33%;
+    margin: -10% 0 0 11%;
+    width: 32%;
 }
 .step2 {
-    margin: 36% 0 0 55%;
+    margin: 36% 0 0 58%;
     width: 33%;
 }
 #conveyor-belt-container {
@@ -691,14 +918,18 @@ nav #control {
     margin: 4% 0 0 38%;
 }
 #conveyor-belt {
-    margin: 4.8% 0 0 10%;
+    margin: 4.4% 0 0 44%;
+    background-color: #fff;
     height: 2.6em;
-    width: 100%;
+    width: 66%;
     border: 2px solid #000;
     border-radius: 14px;
     z-index: 10;
     position: relative;
     box-shadow: 4px 1px 3px rgba(0,0,0,0.7);
+    transform-origin: top right;
+    -webkit-transform: skew(0deg, -3deg);
+    transform: skew(0deg, -3deg);
 }
 .conveyor-belt-roller {
     width: 1em;
@@ -729,14 +960,132 @@ nav #control {
     to {transform:rotate(360deg);}
 }
 .conveyor-belt-base {
-    margin-left: 14%;
+    margin: -2% 0 0 14%;
     border: 2px solid #000;
     border-top: 0;
     border-radius: 1em;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     width: 92%;
-    height: 6em;
+    height: 9em;
     background-color: #4d7992;
     box-shadow: 4px 1px 3px rgba(0,0,0,0.7);
 }
+nav #control {
+}
+#toggle-animation {
+    padding: 16px 4px;
+    width: 90%;
+    font-size: 1.5em;
+    margin: 2em 1em 1em;
+}
+
+/* experimenting. Add later. */
+@-webkit-keyframes thumb {
+    0% { -webkit-transform: scale(1); }
+    50% { -webkit-transform: scale(0.9); }
+    100% { -webkit-transform: scale(1); }
+}
+
+.backbutton img:hover {
+    -webkit-animation-name: thumb;
+    -webkit-animation-duration: 200ms;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-iteration-count: 2;
+    -webkit-animation-timing-function: linear;
+}
+
+.bar-chart-wrapper {
+    margin: -13em 0 0px 62em;
+    border: 1px solid #080;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 24em;
+    padding: 1em;
+    box-shadow: 2px 2px 2px;
+}
+.bar-chart {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-end;
+}
+
+.bar-chart .cat {
+    height: 2em;
+    width: 2em;
+    margin: 0 5px;
+}
+.bar-chart span {
+    margin: 36px 0 0 24px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    display: block;
+    height: 3em;
+    width: 1em;
+    white-space: nowrap;
+}
+
+.bar-chart .cat1 {
+    height:10em;
+}
+.bar-chart .cat2 {
+    height:7em;
+}
+.bar-chart .cat3 {
+    height:5em;
+}
+.bar-chart .cat4 {
+    height: 7em;
+}
+.bar-chart .cat5 {
+    height: 5em;
+}
+.bar-chart .cat6 {
+    height: 9em;
+}
+.bar-chart .cat7 {
+    height: 7em;
+}
+.bar-chart .flex-item-1 {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: .5em;
+}
+
+.bar-chart .flex-item-2 {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: .5em;
+}
+
+.bar-chart .flex-item-3 {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: .5em;
+}
+
+.bar-chart .flex-item-4 {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: .5em;
+}
+.bar-chart .flex-item-5 {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: .5em;
+}
+.bar-chart .flex-item-6 {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: .5em;
+}
+.bar-chart .flex-item-7 {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: .5em;
+}
+
+
