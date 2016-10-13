@@ -535,7 +535,7 @@ header h1 {
         top: 479%;
     }
     50% {
-        left: 559%;
+        left: 565%;
         top: 457%;
     }
     60% {
@@ -653,22 +653,22 @@ header h1 {
         left: 71%;
         top: 476%;
     }
+
     50% {
         left: 191%;
         top: 465%;
     }
     65% {
         left: 308%;
-        top: 453%;
+        top: 452%;
     }
     70% {
         left: 362%;
-        top: 475%;
+        top: 481%;
     }
-
     75% {
         left: 376%;
-        top: 505%;
+        top: 489%;
     }
     80% {
         left: 390%;
@@ -724,13 +724,12 @@ header h1 {
         left: 111%;
         top: 464%;
     }
-
     65% {
-        left: 184%;
-        top: 454%;
+        left: 188%;
+        top: 424%;
     }
     75% {
-        left: 281%;
+        left: 304%;
         top: 459%;
     }
     80% {
@@ -743,7 +742,7 @@ header h1 {
     }
     90% {
         left: 333%;
-        top: 599%;
+        top: 609%;
     }
     95% {
         left: 333%;
@@ -817,19 +816,20 @@ header h1 {
         top: 428%;
     }
     75% {
-        left: 185%;
+        left: 210%;
         top: 404%;
     }
+
     80% {
         left: 256%;
         top: 460%;
     }
     85% {
-        left: 261%;
+        left: 264%;
         top: 513%;
     }
     90% {
-        left: 261%;
+        left: 263%;
         top: 589%;
     }
     95% {
@@ -903,7 +903,7 @@ header h1 {
         top: 414%;
     }
     75% {
-        left: 82%;
+        left: 105%;
         top: 374%;
     }
     80% {
@@ -927,11 +927,11 @@ header h1 {
         left: 192%;
         top: 676%;
     }}
-.step1 {
+.steps-1-and-2 {
     margin: -10% 0 0 11%;
     width: 32%;
 }
-.step2 {
+.step3 {
     margin: 36% 0 0 58%;
     width: 33%;
 }
@@ -984,9 +984,7 @@ header h1 {
 .conveyor-belt-base {
     margin: -2% 0 0 14%;
     border: 1px solid #000;
-    border-radius: 1em;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border-radius: 0 0 1em 1em;
     border-top-width: 0;
     width: 92%;
     background-color: #4d7992;
@@ -1016,7 +1014,7 @@ nav #control {
 }
 
 .bar-chart-wrapper {
-    margin: -13em 0 0px 62em;
+    margin: -13em 0 0 62em;
     border: 1px solid #080;
     border-radius: 8px;
     overflow: hidden;
