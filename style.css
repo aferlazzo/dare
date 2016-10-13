@@ -242,9 +242,10 @@ header h1 {
 #dare_server {
     width: 9em;
     height: 9em;
-    border: 2px solid #00f;
+    border: 1px solid #000;
+    border-bottom-width: 0;
     border-radius: 8px 8px 0 0;
-    background: #999;
+    background: #4d7992;
     position: relative;
     margin: 19.6em 0 0 31.9em;
     z-index: 10;
@@ -538,25 +539,27 @@ header h1 {
         top: 457%;
     }
     60% {
-        left: 631%;
-        top: 472%;
+        left: 610%;
+        top: 513%;
     }
+
     62% {
-        left: 640%;
-        top: 457%;
+        left: 613%;
+        top: 525%;
     }
     64% {
-        left: 610%;
-        top: 482%;
+        left: 613%;
+        top: 548%;
     }
     68% {
-        left: 615%;
+        left: 614%;
         top: 630%;
     }
     75%, 100% {
         left: 615%;
         top: 712%;
-    }}
+    }
+}
 @keyframes drop2 {
     0% {
         left: 45%;
@@ -587,8 +590,8 @@ header h1 {
         top: 455%;
     }
     60% {
-        left: 509%;
-        top: 482%;
+        left: 541%;
+        top: 475%;
     }
     75% {
         left: 544%;
@@ -621,12 +624,12 @@ header h1 {
         top: 477%;
     }
     60% {
-        left: 398%;
-        top: 457%;
+        left: 389%;
+        top: 454%;
     }
     70% {
         left: 460%;
-        top: 500%;
+        top: 520%;
     }
     75% {
         left: 472%;
@@ -659,27 +662,28 @@ header h1 {
         top: 453%;
     }
     70% {
-        left: 380%;
+        left: 362%;
         top: 475%;
     }
+
     75% {
-        left: 385%;
-        top: 480%;
+        left: 376%;
+        top: 505%;
     }
     80% {
         left: 390%;
-        top: 485%;
+        top: 512%;
     }
     85% {
-        left: 395%;
-        top: 518%;
+        left: 400%;
+        top: 547%;
     }
     90% {
-        left: 400%;
-        top: 520%;
+        left: 403%;
+        top: 603%;
     }
     100% {
-        left: 402%;
+        left: 403%;
         top: 688%;
     }
 }
@@ -717,19 +721,36 @@ header h1 {
         top: 467%;
     }
     55% {
-        left: 115%;
-        top: 466%;
+        left: 111%;
+        top: 464%;
     }
+
     65% {
-        left: 139%;
-        top: 450%;
+        left: 184%;
+        top: 454%;
     }
     75% {
-        left: 332%;
-        top: 538%;
+        left: 281%;
+        top: 459%;
+    }
+    80% {
+        left: 325%;
+        top: 474%;
+    }
+    85% {
+        left: 330%;
+        top: 508%;
+    }
+    90% {
+        left: 333%;
+        top: 599%;
+    }
+    95% {
+        left: 333%;
+        top: 676%;
     }
     100% {
-        left: 335%;
+        left: 333%;
         top: 676%;
     }
 }
@@ -758,6 +779,7 @@ header h1 {
         left: -150%;
         top: 475%;
     }
+
     30% {
         left: -150%;
         top: 446%;
@@ -779,28 +801,28 @@ header h1 {
         top: 471%;
     }
     55% {
-        left: -11%;
-        top: 463%;
+        left: -10%;
+        top: 466%;
     }
     60% {
-        left: 11%;
-        top: 463%;
+        left: 23%;
+        top: 462%;
     }
     65% {
-        left: 34%;
-        top: 461%;
+        left: 50%;
+        top: 459%;
     }
     70% {
-        left: 244%;
-        top: 477%;
+        left: 128%;
+        top: 428%;
     }
     75% {
-        left: 244%;
-        top: 484%;
+        left: 185%;
+        top: 404%;
     }
     80% {
-        left: 244%;
-        top: 484%;
+        left: 256%;
+        top: 460%;
     }
     85% {
         left: 261%;
@@ -808,14 +830,14 @@ header h1 {
     }
     90% {
         left: 261%;
-        top: 513%;
+        top: 589%;
     }
     95% {
-        left: 261%;
-        top: 513%;
+        left: 265%;
+        top: 610%;
     }
     100% {
-        left: 261%;
+        left: 265%;
         top: 646%;
     }
 }
@@ -833,7 +855,7 @@ header h1 {
         top: 290%;
     }
     15% {
-        left: -256%;
+        left: -240%;
         top: 290%;
     }
     20% {
@@ -849,62 +871,62 @@ header h1 {
         top: 477%;
     }
     35% {
-        left: -251%;
-        top: 467%;
+        left: -253%;
+        top: 484%;
     }
     40% {
-        left: -256%;
-        top: 477%;
+        left: -253%;
+        top: 362%;
     }
     45% {
-        left: -225%;
-        top: 467%;
+        left: -231%;
+        top: 479%;
     }
     50% {
-        left: -184%;
-        top: 473%;
+        left: -187%;
+        top: 475%;
     }
     55% {
-        left: -139%;
+        left: -132%;
         top: 467%;
     }
     60% {
-        left: -106%;
-        top: 463%;
+        left: -100%;
+        top: 464%;
     }
     65% {
-        left: -84%;
+        left: -78%;
         top: 463%;
     }
     70% {
         left: 10%;
-        top: 454%;
+        top: 414%;
     }
     75% {
-        left: 60%;
-        top: 454%;
+        left: 82%;
+        top: 374%;
     }
     80% {
-        left: 123%;
-        top: 434%;
-    }    85% {
-        left: 153%;
-        top: 454%;
+        left: 189%;
+        top: 430%;
+    }
+    85% {
+        left: 192%;
+        top: 508%;
     }
     90% {
-        left: 173%;
-        top: 476%;
-    }
-    95% {
-        left: 190%;
-        top: 576%;
+        left: 193%;
+        top: 603%;
     }
 
-    100% {
-        left: 191%;
-        top: 700%;
+    95% {
+        left: 193%;
+        top: 678%;
     }
-}
+    100% {
+        left: 192%;
+        top: 676%;
+    }}
 .step1 {
     margin: -10% 0 0 11%;
     width: 32%;
@@ -961,15 +983,13 @@ header h1 {
 }
 .conveyor-belt-base {
     margin: -2% 0 0 14%;
-    border: 2px solid #000;
-    border-top: 0;
+    border: 1px solid #000;
     border-radius: 1em;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    border-top-width: 0;
     width: 92%;
-    height: 9em;
     background-color: #4d7992;
-    box-shadow: 4px 1px 3px rgba(0,0,0,0.7);
 }
 nav #control {
 }
