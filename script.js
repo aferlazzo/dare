@@ -45,7 +45,7 @@ function toggle_animation() {
             for (j = 0; j < roller.length; j++) {
                 addClass(roller[j], "pause-animation");
                 removeClass(roller[j], "start-automation");
-                console.log("pausing roller[" + j +"]");
+                //console.log("pausing roller[" + j +"]");
             }
         } else {
             for (j = 1; j < 10; j++) {
@@ -53,12 +53,12 @@ function toggle_animation() {
                 packet = document.getElementById(thisPacket);
                 removeClass(packet, "pause-animation");
                 addClass(packet, "start-automation");
-                console.log("restarting " + thisPacket);
+                //console.log("restarting " + thisPacket);
             }
             for (j = 0; j < roller.length; j++) {
                 removeClass(roller[j], "pause-animation");
                 addClass(roller[j], "start-automation");
-                console.log("restarting roller[" + j +"]");
+                //console.log("restarting roller[" + j +"]");
             }
         }
     }
