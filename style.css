@@ -526,32 +526,47 @@ header h1 {
         left: 344%;
         top: 290%;
     }
-    18% {
+    20% {
         left: 344%;
         top: 479%;
     }
-    21% {
+    25% {
         left: 350%;
         top: 479%;
     }
+    30% {
+        left: 409%;
+        top: 473%;
+    }
+    35% {
+        left: 448%;
+        top: 469%;
+    }
+    40% {
+        left: 488%;
+        top: 466%;
+    }
+    45% {
+        left: 531%;
+        top: 462%;
+    }
     50% {
-        left: 565%;
+        left: 580%;
         top: 457%;
     }
-    60% {
-        left: 610%;
+    55% {
+        left: 607%;
         top: 513%;
     }
-
-    62% {
+    60% {
         left: 613%;
         top: 525%;
     }
-    64% {
+    65% {
         left: 613%;
         top: 548%;
     }
-    68% {
+    70% {
         left: 614%;
         top: 630%;
     }
@@ -577,16 +592,20 @@ header h1 {
         left: 244%;
         top: 290%;
     }
-    25% {
+    20% {
         left: 244%;
         top: 480%;
     }
+    25% {
+        left: 244%;
+        top: 479%;
+    }
     40% {
-        left: 364%;
-        top: 467%;
+        left: 365%;
+        top: 469%;
     }
     55% {
-        left: 475%;
+        left: 486%;
         top: 455%;
     }
     60% {
@@ -624,7 +643,7 @@ header h1 {
         top: 477%;
     }
     60% {
-        left: 389%;
+        left: 407%;
         top: 454%;
     }
     70% {
@@ -641,22 +660,22 @@ header h1 {
     }
 }
 @keyframes drop4 {
+
     0% {
         left: 44%;
         top: 4%;
     }
     20% {
         left: 44%;
-        top: 483%;
+        top: 480%;
     }
     35% {
         left: 71%;
         top: 476%;
     }
-
     50% {
-        left: 191%;
-        top: 465%;
+        left: 198%;
+        top: 466%;
     }
     65% {
         left: 308%;
@@ -666,12 +685,13 @@ header h1 {
         left: 362%;
         top: 481%;
     }
+
     75% {
-        left: 376%;
+        left: 387%;
         top: 489%;
     }
     80% {
-        left: 390%;
+        left: 397%;
         top: 512%;
     }
     85% {
@@ -688,6 +708,7 @@ header h1 {
     }
 }
 @keyframes drop5 {
+
     0% {
         left: 45%;
         top: 4%;
@@ -708,6 +729,7 @@ header h1 {
         left: -47%;
         top: 480%;
     }
+
     35% {
         left: -32%;
         top: 467%;
@@ -717,7 +739,7 @@ header h1 {
         top: 476%;
     }
     50% {
-        left: 64%;
+        left: 66%;
         top: 467%;
     }
     55% {
@@ -726,19 +748,19 @@ header h1 {
     }
     65% {
         left: 188%;
-        top: 424%;
+        top: 450%;
     }
     75% {
         left: 304%;
-        top: 459%;
+        top: 445%;
     }
     80% {
         left: 325%;
         top: 474%;
     }
     85% {
-        left: 330%;
-        top: 508%;
+        left: 334%;
+        top: 530%;
     }
     90% {
         left: 333%;
@@ -778,7 +800,6 @@ header h1 {
         left: -150%;
         top: 475%;
     }
-
     30% {
         left: -150%;
         top: 446%;
@@ -813,25 +834,25 @@ header h1 {
     }
     70% {
         left: 128%;
-        top: 428%;
+        top: 422%;
     }
     75% {
         left: 210%;
         top: 404%;
     }
-
     80% {
-        left: 256%;
-        top: 460%;
+        left: 259%;
+        top: 446%;
     }
     85% {
         left: 264%;
-        top: 513%;
+        top: 518%;
     }
     90% {
         left: 263%;
         top: 589%;
     }
+
     95% {
         left: 265%;
         top: 610%;
@@ -842,6 +863,7 @@ header h1 {
     }
 }
 @keyframes drop7 {
+
     0% {
         left: 45%;
         top: 4%;
@@ -900,7 +922,7 @@ header h1 {
     }
     70% {
         left: 10%;
-        top: 414%;
+        top: 394%;
     }
     75% {
         left: 105%;
@@ -908,7 +930,7 @@ header h1 {
     }
     80% {
         left: 189%;
-        top: 430%;
+        top: 404%;
     }
     85% {
         left: 192%;
@@ -926,7 +948,8 @@ header h1 {
     100% {
         left: 192%;
         top: 676%;
-    }}
+    }
+}
 .steps-1-and-2 {
     margin: -10% 0 0 11%;
     width: 32%;
@@ -960,8 +983,8 @@ header h1 {
     border-radius: 50%;
     margin: 0.7em 0 0 0.4em;
     float: left;
-    line-height: 1.5em;
-    text-indent: 0.2em;
+    line-height: 1em;
+    text-indent: 0.167em;
     font-size: 1em;
     font-weight: 700;
     animation-name: spin;
